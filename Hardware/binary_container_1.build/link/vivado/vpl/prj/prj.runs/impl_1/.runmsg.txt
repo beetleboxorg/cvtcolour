@@ -1,0 +1,2 @@
+Compiling (bitstream) accelerator binary: binary_container_1
+Log file: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/impl_1/runme.log

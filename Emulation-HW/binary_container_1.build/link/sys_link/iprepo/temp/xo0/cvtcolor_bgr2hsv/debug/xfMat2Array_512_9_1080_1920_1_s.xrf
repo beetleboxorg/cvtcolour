@@ -1,0 +1,22 @@
+Begin Function 'xfMat2Array<512, 9, 1080, 1920, 1>'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local dstPtr_read <read_1411> <integer> <FifoRead> 'read' </tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1411>
+dstPtr_read /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1411
+reg: dstPtr_read_reg_70[63:0] lv
+
+local srcMat_1_read <read_1411> <integer> <FifoRead> 'read' </tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1411>
+srcMat_1_read /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1411
+reg: srcMat_1_read_reg_75[31:0] lv
+
+local srcMat_2_read <read_1411> <integer> <FifoRead> 'read' </tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1411>
+srcMat_2_read /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1411
+reg: srcMat_2_read_reg_80[31:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+
+End Function 'xfMat2Array<512, 9, 1080, 1920, 1>'
+

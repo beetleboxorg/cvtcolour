@@ -1,0 +1,56 @@
+runners:
+ AWS-runner:
+  image: ubuntu-vitis-2020-1
+
+jobs:   
+ build-SW-emu:
+  runner: AWS-runner
+  type:
+   build: software
+  input: 
+   artifact: 
+    - platform/zcu104-firmware
+    - bbx/petalinux-sysroot
+    - bbx/petalinux-firmware
+    - bbx/vitis-libraries
+  steps:
+   - run:
+      name: Run Software Emulation Build
+      command: Emulation-SW/build.sh
+      type: sw-emulation     
+ build-HW-emu:
+  runner: AWS-runner
+  type:
+   build: hw-emulation
+  input: 
+   artifact: 
+    - platform/zcu104-firmware
+    - bbx/petalinux-sysroot
+    - bbx/petalinux-firmware
+    - bbx/vitis-libraries
+  steps:
+   - run:
+      name: Run Hardware Emulation Build
+      command: Emulation-HW/build.sh
+      type: hw-emulation  
+ build-HW:
+  runner: AWS-runner
+  type:
+   build: hardware
+  input: 
+   artifact: 
+    - platform/zcu104-firmware
+    - bbx/petalinux-sysroot
+    - bbx/petalinux-firmware
+    - bbx/vitis-libraries
+  steps:
+   - run:
+      name: Build HW
+      command: Hardware/build.sh
+      type: Hardware 
+workflows:
+ complete-build-test:
+  jobs:
+   - build-SW-emu
+   - build-HW-emu
+   - build-HW

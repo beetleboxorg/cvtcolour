@@ -1,0 +1,33 @@
+Begin Function 'AxiStream2Axi'
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_3
+local empty_91 <> <integer> <Phi> 'phi' <>
+add_ln695 /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:695
+reg: empty_91_reg_105[17:0] lv
+
+local icmp_ln1305 <icmp_1333> <integer> <Comparator> 'icmp' </tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305->/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1333>
+icmp_ln1305 /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305
+icmp_ln1305 /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1333
+reg: icmp_ln1305_reg_178[0:0] lv
+
+# ST_4
+local ldata1_read <read_145> <integer> <FifoRead> 'read' </tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145>
+ldata1_read /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145
+reg: ldata1_read_reg_187[511:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local icmp_ln882 <> <integer> <Comparator> 'icmp' <>
+icmp_ln882 /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:882
+reg: icmp_ln882_reg_163[0:0] lv
+
+local trunc_ln <partselect_1333> <integer> <> 'partselect' </tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305->/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1333>
+trunc_ln /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1305
+trunc_ln /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include/common/xf_structs.hpp:1333
+reg: trunc_ln_reg_167[57:0] lv
+
+
+End Function 'AxiStream2Axi'
+

@@ -1,0 +1,584 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Wed Apr 21 09:53:35 2021
+# Process ID: 5727
+# Current directory: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1
+# Command line: vivado -log zcu104_base_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zcu104_base_wrapper.tcl
+# Log file: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/zcu104_base_wrapper.vds
+# Journal file: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source zcu104_base_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 36583
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/int/xo/ip_repo/xilinx_com_hls_cvtcolor_bgr2hsv_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2020.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top zcu104_base_wrapper -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5734
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2824.844 ; gain = 11.902 ; free physical = 4877 ; free virtual = 25568
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_wrapper' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/imports/hdl/zcu104_base_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3159]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_axi_ic_ps_e_S_AXI_HP0_FPD_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4530]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1WWORKE' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:12]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_auto_ds_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_auto_ds_0' (1#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_m00_data_fifo_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_m00_data_fifo_0' (2#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_m00_regslice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_m00_regslice_0' (3#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_m00_regslice_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'zcu104_base_m00_regslice_0' is unconnected for instance 'm00_regslice' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:551]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'zcu104_base_m00_regslice_0' is unconnected for instance 'm00_regslice' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:551]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'zcu104_base_m00_regslice_0' has 72 connections declared, but only 70 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:551]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1WWORKE' (4#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:12]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5N8R6M' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1928]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_s00_data_fifo_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_s00_data_fifo_0' (5#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s00_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'zcu104_base_s00_data_fifo_0' is unconnected for instance 's00_data_fifo' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:2254]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'zcu104_base_s00_data_fifo_0' is unconnected for instance 's00_data_fifo' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:2254]
+WARNING: [Synth 8-7023] instance 's00_data_fifo' of module 'zcu104_base_s00_data_fifo_0' has 72 connections declared, but only 70 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:2254]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_s00_regslice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_s00_regslice_0' (6#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5N8R6M' (7#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1928]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_12PIPZ4' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_s01_data_fifo_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_s01_data_fifo_0' (8#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s01_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'zcu104_base_s01_data_fifo_0' is unconnected for instance 's01_data_fifo' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3012]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'zcu104_base_s01_data_fifo_0' is unconnected for instance 's01_data_fifo' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3012]
+WARNING: [Synth 8-7023] instance 's01_data_fifo' of module 'zcu104_base_s01_data_fifo_0' has 72 connections declared, but only 70 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3012]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_s01_regslice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_s01_regslice_0' (9#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_12PIPZ4' (10#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_xbar_1' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_xbar_1' (11#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_xbar_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'zcu104_base_xbar_1' is unconnected for instance 'xbar' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:5293]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'zcu104_base_xbar_1' is unconnected for instance 'xbar' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:5293]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'zcu104_base_xbar_1' has 78 connections declared, but only 76 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:5293]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_axi_ic_ps_e_S_AXI_HP0_FPD_0' (12#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4530]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_axi_intc_0_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_axi_intc_0_0' (13#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_axi_intc_0_intr_1_interrupt_concat_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_intc_0_intr_1_interrupt_concat_0/synth/zcu104_base_axi_intc_0_intr_1_interrupt_concat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (14#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_axi_intc_0_intr_1_interrupt_concat_0' (15#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_intc_0_intr_1_interrupt_concat_0/synth/zcu104_base_axi_intc_0_intr_1_interrupt_concat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_axi_interconnect_hpc0_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:5372]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1VUTEPG' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1324]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1VUTEPG' (16#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1324]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_axi_interconnect_hpc0_0' (17#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:5372]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_axi_register_slice_0_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_axi_register_slice_0_0' (18#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_register_slice_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'zcu104_base_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+WARNING: [Synth 8-7023] instance 'axi_register_slice_0' of module 'zcu104_base_axi_register_slice_0_0' has 84 connections declared, but only 54 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3809]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_axi_vip_0_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_vip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_axi_vip_0_0' (19#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_vip_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_axi_vip_1_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_vip_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_axi_vip_1_0' (20#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_axi_vip_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'zcu104_base_axi_vip_1_0' is unconnected for instance 'axi_vip_1' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3902]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'zcu104_base_axi_vip_1_0' is unconnected for instance 'axi_vip_1' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3902]
+WARNING: [Synth 8-7023] instance 'axi_vip_1' of module 'zcu104_base_axi_vip_1_0' has 37 connections declared, but only 35 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3902]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_clk_wiz_0_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_clk_wiz_0_0' (21#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_cvtcolor_bgr2hsv_1_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_cvtcolor_bgr2hsv_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_cvtcolor_bgr2hsv_1_0' (22#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_cvtcolor_bgr2hsv_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_interconnect_axifull_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:5732]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_2Y4CTK' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1568]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_auto_us_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_auto_us_0' (23#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'zcu104_base_auto_us_0' is unconnected for instance 'auto_us' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1855]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'zcu104_base_auto_us_0' is unconnected for instance 'auto_us' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1855]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'zcu104_base_auto_us_0' has 72 connections declared, but only 70 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1855]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_2Y4CTK' (24#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1568]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_interconnect_axifull_0' (25#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:5732]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_interconnect_axihpm0fpd_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:6102]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_S0LIR' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:2400]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_S0LIR' (26#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:2400]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_interconnect_axihpm0fpd_0' (27#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:6102]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_interconnect_axilite_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:6522]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_RHQQJ1' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:624]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_RHQQJ1' (28#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:624]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1Y54YTV' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:756]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_auto_cc_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_auto_cc_0' (29#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_m01_regslice_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_m01_regslice_0' (30#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_m01_regslice_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'zcu104_base_m01_regslice_0' is unconnected for instance 'm01_regslice' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:981]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'zcu104_base_m01_regslice_0' is unconnected for instance 'm01_regslice' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:981]
+WARNING: [Synth 8-7023] instance 'm01_regslice' of module 'zcu104_base_m01_regslice_0' has 40 connections declared, but only 38 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:981]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1Y54YTV' (31#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:756]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_13PB84D' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1022]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_auto_pc_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_auto_pc_0' (32#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_13PB84D' (33#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:1022]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_xbar_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_xbar_0' (34#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_interconnect_axilite_0' (35#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:6522]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_irq_const_tieoff_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_irq_const_tieoff_0/synth/zcu104_base_irq_const_tieoff_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (36#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_irq_const_tieoff_0' (37#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_irq_const_tieoff_0/synth/zcu104_base_irq_const_tieoff_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_proc_sys_reset_0_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_proc_sys_reset_0_0' (38#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'zcu104_base_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4285]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'zcu104_base_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4285]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'zcu104_base_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4285]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'zcu104_base_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4285]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_proc_sys_reset_1_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_proc_sys_reset_1_0' (39#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'zcu104_base_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4293]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'zcu104_base_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4293]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'zcu104_base_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4293]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_1' of module 'zcu104_base_proc_sys_reset_1_0' has 10 connections declared, but only 7 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4293]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_proc_sys_reset_2_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_proc_sys_reset_2_0' (40#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'zcu104_base_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4301]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'zcu104_base_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4301]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'zcu104_base_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4301]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'zcu104_base_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4301]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_2' of module 'zcu104_base_proc_sys_reset_2_0' has 10 connections declared, but only 6 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4301]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4308]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_proc_sys_reset_3_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_proc_sys_reset_3_0' (41#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_3_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'zcu104_base_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4308]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'zcu104_base_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4308]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'zcu104_base_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4308]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'zcu104_base_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4308]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'zcu104_base_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4308]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_3' of module 'zcu104_base_proc_sys_reset_3_0' has 10 connections declared, but only 5 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4308]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4314]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_proc_sys_reset_4_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_proc_sys_reset_4_0' (42#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_4_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'zcu104_base_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4314]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'zcu104_base_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4314]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'zcu104_base_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4314]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'zcu104_base_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4314]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'zcu104_base_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4314]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_4' of module 'zcu104_base_proc_sys_reset_4_0' has 10 connections declared, but only 5 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4314]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4320]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_proc_sys_reset_5_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_proc_sys_reset_5_0' (43#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_5_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'zcu104_base_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4320]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'zcu104_base_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4320]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'zcu104_base_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4320]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'zcu104_base_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4320]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'zcu104_base_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4320]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_5' of module 'zcu104_base_proc_sys_reset_5_0' has 10 connections declared, but only 5 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4320]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4326]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_proc_sys_reset_6_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_proc_sys_reset_6_0' (44#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_proc_sys_reset_6_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'zcu104_base_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4326]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'zcu104_base_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4326]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'zcu104_base_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4326]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'zcu104_base_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4326]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'zcu104_base_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4326]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_6' of module 'zcu104_base_proc_sys_reset_6_0' has 10 connections declared, but only 5 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4326]
+INFO: [Synth 8-6157] synthesizing module 'zcu104_base_ps_e_0' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_ps_e_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_ps_e_0' (45#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-5727-work2-System-Product-Name/realtime/zcu104_base_ps_e_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7071] port 'saxigp5_bid' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7071] port 'saxigp5_rid' of module 'zcu104_base_ps_e_0' is unconnected for instance 'ps_e' [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+WARNING: [Synth 8-7023] instance 'ps_e' of module 'zcu104_base_ps_e_0' has 203 connections declared, but only 195 given [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:4332]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base' (46#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/synth/zcu104_base.v:3159]
+INFO: [Synth 8-6155] done synthesizing module 'zcu104_base_wrapper' (47#1) [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/imports/hdl/zcu104_base_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2881.750 ; gain = 68.809 ; free physical = 4946 ; free virtual = 25640
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2896.594 ; gain = 83.652 ; free physical = 4948 ; free virtual = 25642
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2896.594 ; gain = 83.652 ; free physical = 4948 ; free virtual = 25642
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2896.594 ; gain = 0.000 ; free physical = 4936 ; free virtual = 25630
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_intc_0_0/zcu104_base_axi_intc_0_0/zcu104_base_axi_intc_0_0_in_context.xdc] for cell 'zcu104_base_i/axi_intc_0'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_intc_0_0/zcu104_base_axi_intc_0_0/zcu104_base_axi_intc_0_0_in_context.xdc] for cell 'zcu104_base_i/axi_intc_0'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_register_slice_0_0/zcu104_base_axi_register_slice_0_0/zcu104_base_axi_register_slice_0_0_in_context.xdc] for cell 'zcu104_base_i/axi_register_slice_0'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_register_slice_0_0/zcu104_base_axi_register_slice_0_0/zcu104_base_axi_register_slice_0_0_in_context.xdc] for cell 'zcu104_base_i/axi_register_slice_0'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_vip_0_0/zcu104_base_axi_vip_0_0/zcu104_base_axi_vip_1_0_in_context.xdc] for cell 'zcu104_base_i/axi_vip_0'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_vip_0_0/zcu104_base_axi_vip_0_0/zcu104_base_axi_vip_1_0_in_context.xdc] for cell 'zcu104_base_i/axi_vip_0'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_vip_1_0/zcu104_base_axi_vip_1_0/zcu104_base_axi_vip_1_0_in_context.xdc] for cell 'zcu104_base_i/axi_vip_1'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_axi_vip_1_0/zcu104_base_axi_vip_1_0/zcu104_base_axi_vip_1_0_in_context.xdc] for cell 'zcu104_base_i/axi_vip_1'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc] for cell 'zcu104_base_i/clk_wiz_0'
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:6]
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:8]
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:10]
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:12]
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:14]
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc:16]
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0/zcu104_base_clk_wiz_0_0_in_context.xdc] for cell 'zcu104_base_i/clk_wiz_0'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_0_0/zcu104_base_proc_sys_reset_0_0/zcu104_base_proc_sys_reset_0_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_0'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_0_0/zcu104_base_proc_sys_reset_0_0/zcu104_base_proc_sys_reset_0_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_0'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_1_0/zcu104_base_proc_sys_reset_1_0/zcu104_base_proc_sys_reset_1_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_1'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_1_0/zcu104_base_proc_sys_reset_1_0/zcu104_base_proc_sys_reset_1_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_1'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_2_0/zcu104_base_proc_sys_reset_2_0/zcu104_base_proc_sys_reset_2_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_2'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_2_0/zcu104_base_proc_sys_reset_2_0/zcu104_base_proc_sys_reset_2_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_2'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_3_0/zcu104_base_proc_sys_reset_3_0/zcu104_base_proc_sys_reset_3_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_3'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_3_0/zcu104_base_proc_sys_reset_3_0/zcu104_base_proc_sys_reset_3_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_3'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_4_0/zcu104_base_proc_sys_reset_4_0/zcu104_base_proc_sys_reset_4_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_4'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_4_0/zcu104_base_proc_sys_reset_4_0/zcu104_base_proc_sys_reset_4_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_4'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_5_0/zcu104_base_proc_sys_reset_5_0/zcu104_base_proc_sys_reset_5_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_5'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_5_0/zcu104_base_proc_sys_reset_5_0/zcu104_base_proc_sys_reset_5_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_5'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_6_0/zcu104_base_proc_sys_reset_6_0/zcu104_base_proc_sys_reset_6_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_6'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_proc_sys_reset_6_0/zcu104_base_proc_sys_reset_6_0/zcu104_base_proc_sys_reset_6_0_in_context.xdc] for cell 'zcu104_base_i/proc_sys_reset_6'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_ps_e_0/zcu104_base_ps_e_0/zcu104_base_ps_e_0_in_context.xdc] for cell 'zcu104_base_i/ps_e'
+WARNING: [Vivado 12-584] No ports matched ''. [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_ps_e_0/zcu104_base_ps_e_0/zcu104_base_ps_e_0_in_context.xdc:2]
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_ps_e_0/zcu104_base_ps_e_0/zcu104_base_ps_e_0_in_context.xdc] for cell 'zcu104_base_i/ps_e'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_xbar_0/zcu104_base_xbar_0/zcu104_base_xbar_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/xbar'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_xbar_0/zcu104_base_xbar_0/zcu104_base_xbar_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/xbar'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_cvtcolor_bgr2hsv_1_0/zcu104_base_cvtcolor_bgr2hsv_1_0/zcu104_base_cvtcolor_bgr2hsv_1_0_in_context.xdc] for cell 'zcu104_base_i/cvtcolor_bgr2hsv_1'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_cvtcolor_bgr2hsv_1_0/zcu104_base_cvtcolor_bgr2hsv_1_0/zcu104_base_cvtcolor_bgr2hsv_1_0_in_context.xdc] for cell 'zcu104_base_i/cvtcolor_bgr2hsv_1'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_xbar_1/zcu104_base_xbar_1/zcu104_base_xbar_1_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/xbar'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_xbar_1/zcu104_base_xbar_1/zcu104_base_xbar_1_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/xbar'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_us_0/zcu104_base_auto_us_0/zcu104_base_auto_us_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axifull/s00_couplers/auto_us'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_us_0/zcu104_base_auto_us_0/zcu104_base_auto_us_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axifull/s00_couplers/auto_us'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_pc_0/zcu104_base_auto_pc_0/zcu104_base_auto_pc_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/s00_couplers/auto_pc'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_pc_0/zcu104_base_auto_pc_0/zcu104_base_auto_pc_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/s00_couplers/auto_pc'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_m01_regslice_0/zcu104_base_m01_regslice_0/zcu104_base_m01_regslice_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/m01_couplers/m01_regslice'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_m01_regslice_0/zcu104_base_m01_regslice_0/zcu104_base_m01_regslice_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/m01_couplers/m01_regslice'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_cc_0/zcu104_base_auto_cc_0/zcu104_base_auto_cc_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/m01_couplers/auto_cc'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_cc_0/zcu104_base_auto_cc_0/zcu104_base_auto_cc_0_in_context.xdc] for cell 'zcu104_base_i/interconnect_axilite/m01_couplers/auto_cc'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s00_regslice_0/zcu104_base_s00_regslice_0/zcu104_base_s01_regslice_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s00_regslice_0/zcu104_base_s00_regslice_0/zcu104_base_s01_regslice_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s00_data_fifo_0/zcu104_base_s00_data_fifo_0/zcu104_base_s02_data_fifo_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s00_data_fifo_0/zcu104_base_s00_data_fifo_0/zcu104_base_s02_data_fifo_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_data_fifo'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s01_regslice_0/zcu104_base_s01_regslice_0/zcu104_base_s01_regslice_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s01_regslice_0/zcu104_base_s01_regslice_0/zcu104_base_s01_regslice_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s01_couplers/s01_regslice'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s01_data_fifo_0/zcu104_base_s01_data_fifo_0/zcu104_base_s02_data_fifo_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s01_couplers/s01_data_fifo'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_s01_data_fifo_0/zcu104_base_s01_data_fifo_0/zcu104_base_s02_data_fifo_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s01_couplers/s01_data_fifo'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_m00_data_fifo_0/zcu104_base_m00_data_fifo_0/zcu104_base_m00_data_fifo_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/m00_data_fifo'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_m00_data_fifo_0/zcu104_base_m00_data_fifo_0/zcu104_base_m00_data_fifo_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/m00_data_fifo'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_m00_regslice_0/zcu104_base_m00_regslice_0/zcu104_base_m00_regslice_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_m00_regslice_0/zcu104_base_m00_regslice_0/zcu104_base_m00_regslice_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/m00_regslice'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_ds_0/zcu104_base_auto_ds_0/zcu104_base_auto_ds_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/auto_ds'
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/zcu104_base/ip/zcu104_base_auto_ds_0/zcu104_base_auto_ds_0/zcu104_base_auto_ds_0_in_context.xdc] for cell 'zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/auto_ds'
+Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2999.066 ; gain = 0.000 ; free physical = 4871 ; free virtual = 25579
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3014.066 ; gain = 15.000 ; free physical = 4806 ; free virtual = 25511
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3014.066 ; gain = 201.125 ; free physical = 4890 ; free virtual = 25604
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3014.066 ; gain = 201.125 ; free physical = 4890 ; free virtual = 25604
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for zcu104_base_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_interconnect_hpc0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_register_slice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_vip_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_vip_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axifull. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axihpm0fpd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axilite. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/proc_sys_reset_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/proc_sys_reset_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/proc_sys_reset_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/proc_sys_reset_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/proc_sys_reset_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/proc_sys_reset_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/ps_e. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axilite/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/cvtcolor_bgr2hsv_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_intc_0_intr_1_interrupt_concat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/irq_const_tieoff. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axifull/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axilite/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axilite/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/interconnect_axilite/m01_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s01_couplers/s01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/s01_couplers/s01_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/m00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu104_base_i/axi_ic_ps_e_S_AXI_HP0_FPD/m00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3014.066 ; gain = 201.125 ; free physical = 4881 ; free virtual = 25603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3014.066 ; gain = 201.125 ; free physical = 4880 ; free virtual = 25604
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 3014.066 ; gain = 201.125 ; free physical = 4868 ; free virtual = 25590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3446.551 ; gain = 633.609 ; free physical = 4232 ; free virtual = 24999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3447.551 ; gain = 634.609 ; free physical = 4231 ; free virtual = 24998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:59 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4225 ; free virtual = 24993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4225 ; free virtual = 24994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4225 ; free virtual = 24994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4233 ; free virtual = 24994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4233 ; free virtual = 24994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4233 ; free virtual = 24994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4233 ; free virtual = 24994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |zcu104_base_xbar_1                 |         1|
+|2     |zcu104_base_auto_ds_0              |         1|
+|3     |zcu104_base_m00_data_fifo_0        |         1|
+|4     |zcu104_base_m00_regslice_0         |         1|
+|5     |zcu104_base_s00_data_fifo_0        |         1|
+|6     |zcu104_base_s00_regslice_0         |         1|
+|7     |zcu104_base_s01_data_fifo_0        |         1|
+|8     |zcu104_base_s01_regslice_0         |         1|
+|9     |zcu104_base_auto_us_0              |         1|
+|10    |zcu104_base_xbar_0                 |         1|
+|11    |zcu104_base_auto_cc_0              |         1|
+|12    |zcu104_base_m01_regslice_0         |         1|
+|13    |zcu104_base_auto_pc_0              |         1|
+|14    |zcu104_base_axi_intc_0_0           |         1|
+|15    |zcu104_base_axi_register_slice_0_0 |         1|
+|16    |zcu104_base_axi_vip_0_0            |         1|
+|17    |zcu104_base_axi_vip_1_0            |         1|
+|18    |zcu104_base_clk_wiz_0_0            |         1|
+|19    |zcu104_base_cvtcolor_bgr2hsv_1_0   |         1|
+|20    |zcu104_base_proc_sys_reset_0_0     |         1|
+|21    |zcu104_base_proc_sys_reset_1_0     |         1|
+|22    |zcu104_base_proc_sys_reset_2_0     |         1|
+|23    |zcu104_base_proc_sys_reset_3_0     |         1|
+|24    |zcu104_base_proc_sys_reset_4_0     |         1|
+|25    |zcu104_base_proc_sys_reset_5_0     |         1|
+|26    |zcu104_base_proc_sys_reset_6_0     |         1|
+|27    |zcu104_base_ps_e_0                 |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |zcu104_base_auto_cc              |     1|
+|2     |zcu104_base_auto_ds              |     1|
+|3     |zcu104_base_auto_pc              |     1|
+|4     |zcu104_base_auto_us              |     1|
+|5     |zcu104_base_axi_intc_0           |     1|
+|6     |zcu104_base_axi_register_slice_0 |     1|
+|7     |zcu104_base_axi_vip_0            |     1|
+|8     |zcu104_base_axi_vip_1            |     1|
+|9     |zcu104_base_clk_wiz_0            |     1|
+|10    |zcu104_base_cvtcolor_bgr2hsv_1   |     1|
+|11    |zcu104_base_m00_data_fifo        |     1|
+|12    |zcu104_base_m00_regslice         |     1|
+|13    |zcu104_base_m01_regslice         |     1|
+|14    |zcu104_base_proc_sys_reset_0     |     1|
+|15    |zcu104_base_proc_sys_reset_1     |     1|
+|16    |zcu104_base_proc_sys_reset_2     |     1|
+|17    |zcu104_base_proc_sys_reset_3     |     1|
+|18    |zcu104_base_proc_sys_reset_4     |     1|
+|19    |zcu104_base_proc_sys_reset_5     |     1|
+|20    |zcu104_base_proc_sys_reset_6     |     1|
+|21    |zcu104_base_ps_e                 |     1|
+|22    |zcu104_base_s00_data_fifo        |     1|
+|23    |zcu104_base_s00_regslice         |     1|
+|24    |zcu104_base_s01_data_fifo        |     1|
+|25    |zcu104_base_s01_regslice         |     1|
+|26    |zcu104_base_xbar                 |     2|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.590 ; gain = 662.648 ; free physical = 4232 ; free virtual = 24994
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 3475.590 ; gain = 545.176 ; free physical = 4270 ; free virtual = 25031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 3475.598 ; gain = 662.648 ; free physical = 4270 ; free virtual = 25031
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3475.598 ; gain = 0.000 ; free physical = 4337 ; free virtual = 25098
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3523.277 ; gain = 0.000 ; free physical = 4257 ; free virtual = 25024
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:17 . Memory (MB): peak = 3537.215 ; gain = 1377.699 ; free physical = 4395 ; free virtual = 25164
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl/prj/prj.runs/synth_1/zcu104_base_wrapper.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 21 09:55:05 2021...

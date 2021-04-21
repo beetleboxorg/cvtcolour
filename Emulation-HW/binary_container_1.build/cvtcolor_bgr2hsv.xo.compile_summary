@@ -1,0 +1,236 @@
+<ENTRY>
+{
+ "thisFile": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Apr 21 09:46:19 2021",
+ "timestampMillis": "1618994779282",
+ "buildStep": {
+  "cmdId": "6c687c2c-2f0d-4c3f-afbd-69fbd446b565",
+  "name": "v++",
+  "logFile": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw_emu --compile -I../src --config common-config.cfg --config binary_container_1-cvtcolor_bgr2hsv-compile.cfg -I/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include -I/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/src/build -obinary_container_1.build/cvtcolor_bgr2hsv.xo ../src/xf_cvt_color_accel.cpp ",
+  "args": [
+   "--target",
+   "hw_emu",
+   "--compile",
+   "-I../src",
+   "--config",
+   "common-config.cfg",
+   "--config",
+   "binary_container_1-cvtcolor_bgr2hsv-compile.cfg",
+   "-I/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/libs/xf_opencv/L1/include",
+   "-I/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/src/build",
+   "-obinary_container_1.build/cvtcolor_bgr2hsv.xo",
+   "../src/xf_cvt_color_accel.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/common-config.cfg",
+    "content": "platform=xilinx_zcu104_base_202010_1\nsave-temps=1\n"
+   },
+   {
+    "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1-cvtcolor_bgr2hsv-compile.cfg",
+    "content": "kernel=cvtcolor_bgr2hsv\ndebug=1\nmessageDb=binary_container_1.build/cvtcolor_bgr2hsv.mdb\ntemp_dir=binary_container_1.build\nreport_dir=binary_container_1.build/reports\nlog_dir=binary_container_1.build/logs\n\n[advanced]\nmisc=solution_name=cvtcolor_bgr2hsv\n"
+   }
+  ],
+  "cwd": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Apr 21 09:46:19 2021",
+ "timestampMillis": "1618994779282",
+ "status": {
+  "cmdId": "6c687c2c-2f0d-4c3f-afbd-69fbd446b565",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Apr 21 09:46:29 2021",
+ "timestampMillis": "1618994789606",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_zcu104_base_202010_1.xpfm",
+  "hardwareDsa": "xilinx_zcu104_base_202010_1.xsa",
+  "platformDirectory": "/tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cvtcolor_bgr2hsv",
+     "file": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv.xo",
+     "reports": []
+    },
+    "sources": [
+     "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/src/xf_cvt_color_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS"
+   }
+  ],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Apr 21 09:46:29 2021",
+ "timestampMillis": "1618994789608",
+ "buildStep": {
+  "cmdId": "e1d763a4-fe03-4256-9929-e797a49b14e9",
+  "name": "vitis_hls",
+  "logFile": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/vitis_hls.log",
+  "commandLine": "vitis_hls -f /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Apr 21 09:46:29 2021",
+ "timestampMillis": "1618994789609",
+ "status": {
+  "cmdId": "e1d763a4-fe03-4256-9929-e797a49b14e9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834252",
+ "status": {
+  "cmdId": "e1d763a4-fe03-4256-9929-e797a49b14e9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834262",
+ "report": {
+  "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/solution/.autopilot/db/cvtcolor_bgr2hsv.design.xml",
+  "name": "cvtcolor_bgr2hsv",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834263",
+ "report": {
+  "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/solution/.autopilot/db/.message_syn.xml",
+  "name": "cvtcolor_bgr2hsv",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834263",
+ "report": {
+  "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/reports/cvtcolor_bgr2hsv/hls_reports/cvtcolor_bgr2hsv_csynth.rpt",
+  "name": "cvtcolor_bgr2hsv",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834263",
+ "report": {
+  "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/solution/syn/report/cvtcolor_bgr2hsv_csynth.xml",
+  "name": "cvtcolor_bgr2hsv",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834273",
+ "report": {
+  "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/reports/cvtcolor_bgr2hsv/system_estimate_cvtcolor_bgr2hsv.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834338",
+ "report": {
+  "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834338",
+ "report": {
+  "path": "/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Apr 21 09:47:14 2021",
+ "timestampMillis": "1618994834338",
+ "status": {
+  "cmdId": "6c687c2c-2f0d-4c3f-afbd-69fbd446b565",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

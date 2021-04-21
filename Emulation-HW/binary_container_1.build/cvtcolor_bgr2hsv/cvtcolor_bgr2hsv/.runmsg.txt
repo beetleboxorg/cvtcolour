@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: cvtcolor_bgr2hsv
+Log file: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/binary_container_1.build/cvtcolor_bgr2hsv/cvtcolor_bgr2hsv/vitis_hls.log
