@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="vpl" LaunchDir="/tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Hardware/binary_container_1.build/link/vivado/vpl" FlowId="VPL_HW" FromStepId="create_project" ToStepId="impl"/>
-</Runs>
-
