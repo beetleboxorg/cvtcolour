@@ -1,2 +1,0 @@
-INFO: Platform does not require extraction of debug/profile metadata.
-No monitor points found for BD automation.
