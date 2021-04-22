@@ -33,7 +33,7 @@ jobs:
   input: 
    artifact: 
     - build-SW-emu
-    - bbx/zcu104-firmware
+    - platform/zcu104-firmware
   steps:
    - run:
       name: Run Software Emulation
@@ -65,7 +65,7 @@ jobs:
   input: 
    artifact: 
     - build-HW-emu
-    - bbx/zcu104-firmware
+    - platform/zcu104-firmware
   steps:
    - run:
       name: Hardware Emulation
