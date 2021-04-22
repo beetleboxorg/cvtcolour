@@ -4,7 +4,7 @@
 #Ignore any folders that contains large files
 large_file_folder/
 _ide/
-Emulation-SW/*.xclbin*
+Emulation-SW/binary_container_1.build
 Emulation-SW/*.xclbin
 Emulation-SW/*.build
 Emulation-SW/.Xil
@@ -12,14 +12,14 @@ Emulation-SW/src
 Emulation-SW/package.build
 Emulation-SW/package
 Emulation-SW/ip_cache
-Hardware/*.xclbin*
+Hardware/binary_container_1.build
 Hardware/*.xclbin
 Hardware/.Xil
 Hardware/src
 Hardware/package.build
 Hardware/package
 Hardware/ip_cache
-Emulation-HW/*.xclbin*
+Emulation-HW/binary_container_1.build
 Emulation-HW/*.xclbin
 Emulation-HW/.Xil
 Emulation-HW/src
