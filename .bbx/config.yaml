@@ -22,7 +22,7 @@ jobs:
       name: Download files
       command: |
        git clone https://github.com/mwijeyasinghebbx/test_images
-       mv test_images/* /tmp/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
       type: miscellaneous  
  test-sw-emulation:
   runner: AWS-runner
@@ -91,4 +91,5 @@ workflows:
    - build-SW-emu
    - test-sw-emulation
    - build-HW-emu
+   - test-hw-emulation
    - build-HW
