@@ -15,15 +15,15 @@ jobs:
     - bbx/vitis-libraries
   steps:
    - run:
-      name: Run Software Emulation Build
-      command: Emulation-SW/build.sh
-      type: sw-emulation    
-   - run:
       name: Download files
       command: |
        git clone https://github.com/mwijeyasinghebbx/test_images
        mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
       type: miscellaneous  
+   - run:
+      name: Run Software Emulation Build
+      command: Emulation-SW/build.sh
+      type: sw-emulation    
  test-sw-emulation:
   runner: AWS-runner
   depends:
@@ -52,6 +52,12 @@ jobs:
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
   steps:
+   - run:
+      name: Download files
+      command: |
+       git clone https://github.com/mwijeyasinghebbx/test_images
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
+      type: miscellaneous  
    - run:
       name: Run Hardware Emulation Build
       command: Emulation-HW/build.sh
