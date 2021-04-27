@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour/Emulation-HW/package/sim/behav_waveform/xsim
+$QEMU_GDB_COMMAND /tools/Xilinx/Vitis/2020.1/data/emulation/qemu/unified_qemu_v4_2/sysroots/x86_64-petalinux-linux/usr/bin/qemu-system-microblazeel  -hw-dtb /tools/Xilinx/Vitis/2020.1/data/emulation/dtbs/zynqmp/zynqmp-pmu.dtb  -kernel /tools/Xilinx/Vitis/2020.1/data/emulation/dtbs/zynqmp/pmu_rom_qemu_sha3.elf  -chardev "socket,path=/tmp/24414/qemu-rport-_pmu@0,id=pmu-apu-rp" -M "microblaze-fdt" -device "loader,file=/tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/qemu/pmufw.elf" -machine-path "." -display "none" -hw-dtb "/tools/Xilinx/Vitis/2020.1/data/emulation/dtbs/zynqmp/zynqmp-pmu.dtb"   

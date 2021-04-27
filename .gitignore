@@ -37,7 +37,7 @@ Emulation-HW/ip_cache
 *.package_summary
 *.img
 hw_tester
-
+qemu*
 
 #Ignore any files used for debugging
 *.debug
