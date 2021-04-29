@@ -1,7 +1,81 @@
 runners:
  AWS-runner:
   image: ubuntu-vitis-2020-1
+
 jobs:   
+ build-SW-emu:
+  runner: AWS-runner
+  type:
+   build: software
+  input: 
+   artifact: 
+    - platform/zcu104-firmware
+    - bbx/petalinux-sysroot
+    - bbx/petalinux-firmware
+    - bbx/vitis-libraries
+  steps:
+   - run:
+      name: Download files
+      command: |
+       git clone https://github.com/mwijeyasinghebbx/test_images
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
+      type: miscellaneous 
+   - run:
+      name: Run Software Emulation Build
+      command: Emulation-SW/build.sh
+      type: sw-emulation    
+ test-sw-emulation:
+  runner: AWS-runner
+  depends:
+   - build-SW-emu
+  type:
+   test: sw-emulation
+  input: 
+   artifact: 
+    - build-SW-emu
+    - platform/zcu104-firmware
+  steps:
+   - run:
+      name: Run Software Emulation
+      command: ./sw_emu.sh 
+   - run:
+      name: Software Emulation
+      command: echo "Running Software Emulation" 
+ build-HW-emu:
+  runner: AWS-runner
+  type:
+   build: hw-emulation
+  input: 
+   artifact: 
+    - platform/zcu104-firmware
+    - bbx/petalinux-sysroot
+    - bbx/petalinux-firmware
+    - bbx/vitis-libraries
+  steps:
+   - run:
+      name: Download files
+      command: |
+       git clone https://github.com/mwijeyasinghebbx/test_images
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
+      type: miscellaneous  
+   - run:
+      name: Run Hardware Emulation Build
+      command: Emulation-HW/build.sh
+      type: hw-emulation  
+ test-hw-emulation:
+  runner: AWS-runner
+  depends:
+   - build-HW-emu
+  type:
+   test: hw-emulation
+  input: 
+   artifact: 
+    - build-HW-emu
+    - platform/zcu104-firmware
+  steps:
+   - run:
+      name: Hardware Emulation
+      command: ./hw_emu.sh 
  build-HW:
   runner: AWS-runner
   type:
@@ -20,4 +94,8 @@ jobs:
 workflows:
  complete-build-test:
   jobs:
+   - build-SW-emu
+   - test-sw-emulation
+   - build-HW-emu
+   - test-hw-emulation
    - build-HW
