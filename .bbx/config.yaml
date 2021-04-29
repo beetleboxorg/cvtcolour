@@ -7,6 +7,12 @@ jobs:
   runner: AWS-runner
   type:
    build: software
+  output:
+   artifact:
+    - Emulation-SW/build.sh
+    - sw_emu.sh
+    - Emulation-SW/launch.sh
+    - Emulation-SW/launch.expect
   input: 
    artifact: 
     - platform/zcu104-firmware
@@ -45,6 +51,11 @@ jobs:
   runner: AWS-runner
   type:
    build: hw-emulation
+   artifact:
+    - Emulation-HW/build.sh
+    - hw_emu.sh
+    - Emulation-HW/launch.sh
+    - Emulation-HW/launch.expect
   input: 
    artifact: 
     - platform/zcu104-firmware
