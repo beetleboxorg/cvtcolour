@@ -7,18 +7,18 @@ jobs:
   runner: AWS-runner
   type:
    build: software
-  output:
-   artifact:
-    - Emulation-SW/build.sh
-    - sw_emu.sh
-    - Emulation-SW/launch.sh
-    - Emulation-SW/launch.expect
   input: 
    artifact: 
     - platform/zcu104-firmware
     - bbx/petalinux-sysroot
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
+  output:
+   artifact:
+    - Emulation-SW/build.sh
+    - sw_emu.sh
+    - Emulation-SW/launch.sh
+    - Emulation-SW/launch.expect
   steps:
    - run:
       name: Download files
@@ -51,6 +51,7 @@ jobs:
   runner: AWS-runner
   type:
    build: hw-emulation
+  output:
    artifact:
     - Emulation-HW/build.sh
     - hw_emu.sh
