@@ -28,7 +28,7 @@ jobs:
       type: miscellaneous 
    - run:
       name: Run Software Emulation Build
-      command: Emulation-SW/build.sh
+      command: time Emulation-SW/build.sh
       type: sw-emulation    
  test-sw-emulation:
   runner: AWS-runner
@@ -72,7 +72,7 @@ jobs:
       type: miscellaneous  
    - run:
       name: Run Hardware Emulation Build
-      command: Emulation-HW/build.sh
+      command: time Emulation-HW/build.sh
       type: hw-emulation  
  test-hw-emulation:
   runner: AWS-runner
@@ -101,7 +101,7 @@ jobs:
   steps:
    - run:
       name: Build HW
-      command: Hardware/build.sh
+      command: time Hardware/build.sh
       type: Hardware 
 workflows:
  complete-build-test:
