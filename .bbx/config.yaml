@@ -43,7 +43,7 @@ jobs:
   steps:
    - run:
       name: Run Software Emulation
-      command: ./sw_emu.sh 
+      command: time ./sw_emu.sh 
    - run:
       name: Software Emulation
       command: echo "Running Software Emulation" 
@@ -87,7 +87,7 @@ jobs:
   steps:
    - run:
       name: Hardware Emulation
-      command: ./hw_emu.sh 
+      command: time ./hw_emu.sh 
  build-HW:
   runner: AWS-runner
   type:
