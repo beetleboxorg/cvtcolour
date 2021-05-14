@@ -9,7 +9,7 @@ jobs:
    build: software
   input: 
    artifact: 
-    - platform/zcu104-firmware
+    - platform/plat
     - bbx/petalinux-sysroot
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
@@ -24,7 +24,7 @@ jobs:
       name: Download files
       command: |
        git clone https://github.com/mwijeyasinghebbx/test_images
-       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/plat/sw/xilinx_zcu104_base_202010_1/xrt/image/
       type: miscellaneous 
    - run:
       name: Run Software Emulation Build
@@ -39,7 +39,7 @@ jobs:
   input: 
    artifact: 
     - build-SW-emu
-    - platform/zcu104-firmware
+    - platform/plat
   steps:
    - run:
       name: Run Software Emulation
@@ -59,7 +59,7 @@ jobs:
     - Emulation-HW/launch.expect
   input: 
    artifact: 
-    - platform/zcu104-firmware
+    - platform/plat
     - bbx/petalinux-sysroot
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
@@ -68,7 +68,7 @@ jobs:
       name: Download files
       command: |
        git clone https://github.com/mwijeyasinghebbx/test_images
-       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/plat/sw/xilinx_zcu104_base_202010_1/xrt/image/
       type: miscellaneous  
    - run:
       name: Run Hardware Emulation Build
@@ -83,7 +83,7 @@ jobs:
   input: 
    artifact: 
     - build-HW-emu
-    - platform/zcu104-firmware
+    - platform/plat
   steps:
    - run:
       name: Hardware Emulation
@@ -94,7 +94,7 @@ jobs:
    build: hardware
   input: 
    artifact: 
-    - platform/zcu104-firmware
+    - platform/plat
     - bbx/petalinux-sysroot
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
