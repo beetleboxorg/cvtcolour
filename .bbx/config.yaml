@@ -9,7 +9,7 @@ jobs:
    build: software
   input: 
    artifact: 
-    - platform/plat
+    - plat.zip
     - bbx/petalinux-sysroot
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
@@ -39,7 +39,7 @@ jobs:
   input: 
    artifact: 
     - build-SW-emu
-    - platform/plat
+    - plat.zip
   steps:
    - run:
       name: Run Software Emulation
@@ -59,7 +59,7 @@ jobs:
     - Emulation-HW/launch.expect
   input: 
    artifact: 
-    - platform/plat
+    - plat.zip
     - bbx/petalinux-sysroot
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
@@ -83,7 +83,7 @@ jobs:
   input: 
    artifact: 
     - build-HW-emu
-    - platform/plat
+    - plat.zip
   steps:
    - run:
       name: Hardware Emulation
@@ -94,7 +94,7 @@ jobs:
    build: hardware
   input: 
    artifact: 
-    - platform/plat
+    - plat.zip
     - bbx/petalinux-sysroot
     - bbx/petalinux-firmware
     - bbx/vitis-libraries
