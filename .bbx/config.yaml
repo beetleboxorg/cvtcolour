@@ -1,7 +1,7 @@
 runners:
  AWS-runner:
-  image: ip-192-168-102-216:5000/ubuntu-vitis-2020-1
-
+  image: work1-virtualbox:5000/ubuntu-vitis-2020-1
+  
 jobs:   
  build-SW-emu:
   runner: AWS-runner
