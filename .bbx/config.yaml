@@ -2,88 +2,82 @@ runners:
  AWS-runner:
   image: ubuntu-vitis-2020-1
 
+
 jobs:   
  build-SW-emu:
   runner: AWS-runner
   type:
    build: software
+  current_working_directory: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour       
   input: 
    artifact: 
-    - plat.zip
-    - bbx/petalinux-sysroot
-    - bbx/petalinux-firmware
-    - bbx/vitis-libraries
+    - xilinx_zcu104_base_202010_1.zip
+    - aarch64-xilinx-linux2020_1.zip
+    - xilinx-zynqmp-common-v2020.1.tar.gz
+    - Vitis_Libraries_2020_1.tar.gz
   output:
    artifact:
-    - Emulation-SW/build.sh
+    - Emulation-SW
     - sw_emu.sh
-    - Emulation-SW/launch.sh
-    - Emulation-SW/launch.expect
   steps:
    - run:
       name: Download files
       command: |
        git clone https://github.com/mwijeyasinghebbx/test_images
-       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/plat/sw/xilinx_zcu104_base_202010_1/xrt/image/
-      type: miscellaneous 
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
    - run:
       name: Run Software Emulation Build
       command: time Emulation-SW/build.sh
-      type: sw-emulation    
  test-sw-emulation:
   runner: AWS-runner
   depends:
    - build-SW-emu
   type:
    test: sw-emulation
+  current_working_directory: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour       
   input: 
    artifact: 
     - build-SW-emu
-    - plat.zip
+    - xilinx_zcu104_base_202010_1.zip
   steps:
    - run:
       name: Run Software Emulation
       command: time ./sw_emu.sh 
-   - run:
-      name: Software Emulation
-      command: echo "Running Software Emulation" 
  build-HW-emu:
   runner: AWS-runner
   type:
    build: hw-emulation
   output:
    artifact:
-    - Emulation-HW/build.sh
+    - Emulation-HW
     - hw_emu.sh
-    - Emulation-HW/launch.sh
-    - Emulation-HW/launch.expect
+  current_working_directory: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour           
   input: 
    artifact: 
-    - plat.zip
-    - bbx/petalinux-sysroot
-    - bbx/petalinux-firmware
-    - bbx/vitis-libraries
+    - xilinx_zcu104_base_202010_1.zip
+    - aarch64-xilinx-linux2020_1.zip
+    - xilinx-zynqmp-common-v2020.1.tar.gz
+    - Vitis_Libraries_2020_1.tar.gz
   steps:
    - run:
       name: Download files
       command: |
        git clone https://github.com/mwijeyasinghebbx/test_images
-       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/plat/sw/xilinx_zcu104_base_202010_1/xrt/image/
-      type: miscellaneous  
+       mv test_images/* /tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/sw/xilinx_zcu104_base_202010_1/xrt/image/
    - run:
       name: Run Hardware Emulation Build
       command: time Emulation-HW/build.sh
-      type: hw-emulation  
  test-hw-emulation:
   runner: AWS-runner
   depends:
    - build-HW-emu
   type:
    test: hw-emulation
+  current_working_directory: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour          
   input: 
    artifact: 
     - build-HW-emu
-    - plat.zip
+    - xilinx_zcu104_base_202010_1.zip
   steps:
    - run:
       name: Hardware Emulation
@@ -92,12 +86,13 @@ jobs:
   runner: AWS-runner
   type:
    build: hardware
+  current_working_directory: /tools/Xilinx/Vitis/2020.1/workspace/cvtcolour          
   input: 
    artifact: 
-    - plat.zip
-    - bbx/petalinux-sysroot
-    - bbx/petalinux-firmware
-    - bbx/vitis-libraries
+    - xilinx_zcu104_base_202010_1.zip
+    - aarch64-xilinx-linux2020_1.zip
+    - xilinx-zynqmp-common-v2020.1.tar.gz
+    - Vitis_Libraries_2020_1.tar.gz
   steps:
    - run:
       name: Build HW
@@ -107,7 +102,9 @@ workflows:
  complete-build-test:
   jobs:
    - build-SW-emu
-   - test-sw-emulation
    - build-HW-emu
-   - test-hw-emulation
    - build-HW
+   - test-sw-emulation
+   - test-hw-emulation   
+
+
